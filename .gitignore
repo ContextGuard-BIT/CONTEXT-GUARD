@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Models & large files
+backend/models/*.bin
+backend/models/*.pt
+backend/models/*.safetensors
+*.pkl
+*.faiss
+
+# Environment
+.env
+.env.*
+
+# Data (raw / labeled — keep structure, ignore actual files)
+data/raw/*
+data/labeled/*
+!data/raw/.gitkeep
+!data/labeled/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+*.log
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.env
